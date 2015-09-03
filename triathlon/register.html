@@ -1,0 +1,70 @@
+<!doctype html>
+   <html>
+       <head>
+           <meta charset="utf-8">
+
+           <!-- Don't forget to customize the title! -->
+           <title>Register</title>
+
+           <meta name="author" content="Austin Lee">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <script src="scripts/webcomponents-lite.min.js"></script>
+           <link rel="import" href="static-content.html">
+           <link rel="stylesheet" type="text/css" href="css/triathlon.css" media="screen">
+           <script>
+              function myFunction() {
+              // document.getElementById("register").innerHTML = "You Have Been Registered!";
+              alert("You have been registered.");
+              }
+           </script>
+       </head>
+       <body>
+           <div>
+           <header role="banner" id="page-header">
+               <!-- in satic-content.html -->
+           </header>
+           <nav role="navigation" id="page-nav">
+               <!-- in satic-content.html -->
+           </nav>
+           <main role="main" id="page-main">
+               <div id="mainContent">
+                 <h1>Registration Form</h1>
+                  <h2>Deadline for Registration is July 30th</h2>
+                   <div id="form"> 
+                    <form>
+                      <p>First Name:</p>
+                      <input type="text" name="firstname">
+                      <p>Last Name:</p>
+                      <input type="text" name="lastname">
+                      <p>Email:</p>
+                      <input type="text" name="email">
+                      <br><br>
+                      <input type="radio" name="event" value="bike" checked>Bike
+                      <br>
+                      <input type="radio" name="event" value="run">Run
+                      <br>
+                      <input type="radio" name="event" value="swim">Swim
+                      <br><br>
+                      <input type="radio" name="sex" value="male" checked>Male
+                      <br>
+                      <input type="radio" name="sex" value="female">Female
+                      <br><br>
+                      <input type="checkbox" name="age">18 Years Old
+                      <br>
+                      <input type="checkbox" name="paid">Pay $100
+                      <br><br>
+                    </form>
+                   </div>
+                   <div id="button">
+                    <button id="register-button" onclick="myFunction()">Register Now</button>
+                   </div>
+                  <h1 id="register"></h1>
+               </div>
+           </main>
+           <footer role="contentinfo" id="page-footer">
+               <!-- in satic-content.html -->
+           </footer>
+           </div>
+           <script src="scripts/moduleloader.js"></script>
+       </body>
+   </html>

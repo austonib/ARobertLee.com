@@ -1,0 +1,74 @@
+<!doctype html>
+   <html>
+       <head>
+           <meta charset="utf-8">
+
+           <!-- Don't forget to customize the title! -->
+           <title>Contact Us</title>
+
+           <meta name="author" content="Austin Lee">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <script src="scripts/webcomponents-lite.min.js"></script>
+           <link rel="import" href="static-content.html">
+           <link rel="stylesheet" type="text/css" href="css/triathlon.css" media="screen">
+           <script>
+              function myFunction() {
+              // document.getElementById("register").innerHTML = "You Have Been Registered!";
+              alert("Thank you for your question/comment.");
+              }
+           </script>
+       </head>
+       <body>
+           <div>
+           <header role="banner" id="page-header">
+               <!-- in satic-content.html -->
+           </header>
+           <nav role="navigation" id="page-nav">
+               <!-- in satic-content.html -->
+           </nav>
+           <main role="main" id="page-main">
+               <div id="mainContent">
+                 <h1>Contact Us Form</h1>
+                  <div id="form">
+                    <form>
+                      <p>First Name:</p>
+                      <input type="text" name="firstname">
+                      <br>
+                      <p>Last Name:</p>
+                      <input type="text" name="lastname">
+                      <br>
+                      <p>Email:</p>
+                      <input type="text" name="email">
+                      <br><br>
+                      <input type="radio" name="event" value="bike" checked>Bike
+                      <br>
+                      <input type="radio" name="event" value="run">Run
+                      <br>
+                      <input type="radio" name="event" value="swim">Swim
+                      <br>
+                      <input type="radio" name="event" value="support">Supporter/Driver
+                      <br>
+                      <input type="radio" name="event" value="none">None
+                      <br><br>
+                      <input type="radio" name="registered" value="registered" checked>Registered
+                      <br>
+                      <input type="radio" name="registered" value="not-registered">Not Yet Registered
+                      <br><br>
+                      Question/Comment:
+                      <input type="text" name="question">
+                      <br><br>
+                    </form>
+                  </div>
+                  <div id="button">
+                    <button onclick="myFunction()">Submit</button>
+                  </div>
+                  <h1 id="register"></h1>
+               </div>
+           </main>
+           <footer role="contentinfo" id="page-footer">
+               <!-- in satic-content.html -->
+           </footer>
+           </div>
+           <script src="scripts/moduleloader.js"></script>
+       </body>
+   </html>
